@@ -1,14 +1,12 @@
-#Create variable to check the year
-year = int(input("What year would you like to check?: "))
+#create variable to provide input
+year = int(input("Enter a year: "))
 
-#Create if/else to see if year has a remainder of 0
+#use if/elif statement to check if year is leap year or not 
 if year % 4 == 0:
-    if year % 100 == 0:
-        if year % 400 == 0:
-            print("Leap year")
-        else:
-            print("Not a leap year")
-    else:
-        print("leap year")
+  print("Leap year")
+elif year % 100 == 0:
+  print("Leap year")
+elif year % 400 == 0:
+  print("Leap year")
 else:
-    print("Not a leap year")
+  print("Not a leap year")
